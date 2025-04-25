@@ -9,18 +9,18 @@ end type
 global n_smtpclient n_smtpclient
 
 forward prototypes
-public function integer of_function_1 ()
 public function integer of_function_2 ()
 public function integer of_function_3 ()
+public function integer of_function_1 (integer test)
 end prototypes
-
-public function integer of_function_1 ();Return 1
-end function
 
 public function integer of_function_2 ();Return 2
 end function
 
 public function integer of_function_3 ();Return 3
+end function
+
+public function integer of_function_1 (integer test);Return 1
 end function
 
 event onsendfinished;//Get the result here
